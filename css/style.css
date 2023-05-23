@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    color: white;
+    font-family:"papyrus";
+}
+header {
+    text-align: center;
+    border: 5px solid red;
+}
+
+h1 {
+    font-size: 50px;
+    color: red;
+}
+
+h1, h2, h3 {
+    text-align: center;  
+}
+
+p{
+    font-size: 20px;
+}
+
+#sec1 {
+    margin: auto;
+    width:0% /*this aligned the links (images) vertically in the centre*/
+}
+
+li {
+    list-style-type: lower-roman;
+    font-style: oblique;
+    font-size: 20px;
+}
