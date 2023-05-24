@@ -3,31 +3,55 @@ body {
     color: white;
     font-family:"papyrus";
 }
+
+#welcome {
+    background: url('/images/space.jpg')
+}
 header {
-    text-align: center;
-    border: 5px solid red;
+    text-align: center; /* This aligns the images too to the centre*/
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 50px;  /* when this line is placed in the header, the font is extremely large*/
     color: red;
+    border: 3px solid red;
 }
 
 h1, h2, h3 {
     text-align: center;  
 }
 
-p{
-    font-size: 20px;
-}
-
 #sec1 {
     margin: auto;
-    width:0% /*this aligned the links (images) vertically in the centre*/
+    width:0% /*this aligned the linked images vertically in the centre*/
 }
 
-li {
+/*had to use the following selecter carafully in order to avoid borders around other links (image links)*/
+a.button:visited, a.button:active, a.button:hover, a.button:link {
+    background-color:red;
+    color: white;
+    font-weight: bolder;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* different style for list of hints*/
+#dno2 {
     list-style-type: lower-roman;
     font-style: oblique;
     font-size: 20px;
+}
+
+#footer  {
+    font-style: oblique;
+    font-size: 13px;
+    width:100%;
+    text-align: center;
+    border-top: 1px solid red;
+    position: fixed; /*last 2 lines keep the foot at the bottom fixed*/
+    bottom:0;
+    
+    
 }
